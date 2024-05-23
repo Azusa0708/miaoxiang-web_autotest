@@ -100,7 +100,7 @@ chrome_options.add_argument(r'--user-data-dir=C:\Users\Administrator\AppData\Loc
 driver = webdriver.Chrome(options=chrome_options)
 
 #进入妙想主页
-driver.get("http://aife-test.eastmoney.com:9000/chat")
+driver.get("*****************")
 driver.maximize_window()
 
 #先使用sleep 暴力等待
