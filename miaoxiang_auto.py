@@ -84,6 +84,19 @@ def touch_helper():
 def touch_module(module_key):
     assert_exist_key(module_key)
 
+#点击问题输入框
+def touch_questionbox():
+    #问题输入框
+    questionbox_xpath_expression = '//*[@id="MxChatRoomListWrap"]/div/div[1]/footer/main/textarea'
+
+    #通过xpath寻找问题输入框
+    questionbox = driver.find_element(By.XPATH, questionbox_xpath_expression)
+
+    assert_exist_key(questionbox)
+
+#自定义问题输入
+
+
 #点击随机推荐问题
 def touch_randomquestion():
     #推荐问题n按钮xpath
@@ -115,7 +128,7 @@ def get_placeholder_text():
     placeholder_text = placeholder_text.text
     placeholder_text = unescape(placeholder_text)
     #print(placeholder_text.text)
-    time.sleep(1)
+    #time.sleep(1)
 
 #爬取前端文字回答
 def get_text_answer():
@@ -124,7 +137,7 @@ def get_text_answer():
     text_answer = text_answer.text
     text_answer = unescape(text_answer)
     #print(text_answer.text)
-    time.sleep(1)
+    #time.sleep(1)
 
 #比对问题回答的相似度
 def compare_similarity():
