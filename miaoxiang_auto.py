@@ -10,6 +10,7 @@ from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 import os
 from openpyxl import Workbook
+import difflib
 
 
 ##################################################初始化测试板块配置##################################################
