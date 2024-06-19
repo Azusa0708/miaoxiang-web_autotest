@@ -15,7 +15,6 @@ from openpyxl import Workbook
 import difflib
 import pytest
 import allure
-import allure_pytest
 
 class miaoxiang:
     #初始化依次填写精确度、轮次、文件名、模块xpath表达式
@@ -29,6 +28,7 @@ class miaoxiang:
         self.i = 0
         self.file_name = file_name
         self.chrome_options = Options()
+        #填写chrome浏览器userdata存储位置
         self.chrome_options.add_argument(r'--user-data-dir=C:\Users\Administrator\AppData\Local\Google\Chrome\User Data')
         self.driver = webdriver.Chrome(options=self.chrome_options)
         
