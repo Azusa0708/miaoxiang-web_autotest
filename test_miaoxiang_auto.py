@@ -5,8 +5,8 @@ thread = 0
 
 def test_a():
     global thread
-    a = miaoxiang(0.4,2,'test.xlsx','//*[@id="root"]/div/article/main/div/main/article/section[1]/main/div[1]/div')
-    a.test_round()
+    a = miaoxiang(0.4,3,'test.xlsx','//*[@id="root"]/div/article/main/div/main/article/section[1]/main/div[2]/div','question.xlsx')
+    a.test_round_2()
     thread = thread + 1
 
 
@@ -15,7 +15,7 @@ def test_b():
     while thread != 1:
         time.sleep(2)
     b = miaoxiang(0.4,1,'test.xlsx','//*[@id="root"]/div/article/main/div/main/article/section[1]/main/div[2]/div')
-    b.test_round()
+    b.test_round_1()
     thread = thread + 1
 
 def test_c():
@@ -23,7 +23,7 @@ def test_c():
     while thread != 2:
         time.sleep(2)
     b = miaoxiang(0.4,2,'test.xlsx','//*[@id="root"]/div/article/main/div/main/article/section[2]/main/div[2]/div')
-    b.test_round()
+    b.test_round_1()
     thread = thread + 1
 
 def test_d():
@@ -31,5 +31,5 @@ def test_d():
     while thread != 3:
         time.sleep(2)
     b = miaoxiang(0.4,2,'test.xlsx','//*[@id="root"]/div/article/main/div/main/article/section[2]/main/div[3]/div')
-    b.test_round()
+    b.test_round_1()
     thread = thread + 1
