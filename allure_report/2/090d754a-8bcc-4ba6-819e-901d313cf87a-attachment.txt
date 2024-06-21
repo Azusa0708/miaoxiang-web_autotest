@@ -1,4 +1,0 @@
-[35mDEBUG   [0m jieba:__init__.py:113 Building prefix dict from the default dictionary ...
-[35mDEBUG   [0m jieba:__init__.py:132 Loading model from cache C:\Users\Administrator\AppData\Local\Temp\jieba.cache
-[35mDEBUG   [0m jieba:__init__.py:164 Loading model cost 0.492 seconds.
-[35mDEBUG   [0m jieba:__init__.py:166 Prefix dict has been built successfully.
